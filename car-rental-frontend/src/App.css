@@ -1,0 +1,32 @@
+#root {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(#d3ebff, #fff0d3);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: calc(80% - 5rem);
+    margin: 10vh auto;
+}
+
+.cars-container {
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 5vh;
+    column-gap: 5vh;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 2rem;
+    font-style: oblique;
+}
