@@ -52,14 +52,14 @@ function App() {
       ...prev,
       isLoggedIn: window.localStorage.getItem("isLoggedIn"),
       token: window.localStorage.getItem("token"),
-      userinfo: JSON.parse(window.localStorage.getItem("userinfo"))
+      // userinfo: JSON.parse(window.localStorage.getItem("userinfo"))
     }))
   }, []);
 
   useEffect(() => { 
     window.localStorage.setItem("isLoggedIn",isLoggedIn)
     window.localStorage.setItem("token",token)
-    window.localStorage.setItem("userinfo",JSON.stringify(userinfo))
+    // window.localStorage.setItem("userinfo",JSON.stringify(userinfo))
     
     
   },[isLoggedIn,token,userinfo])

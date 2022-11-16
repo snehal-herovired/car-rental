@@ -35,9 +35,11 @@ function Header(props) {
             <Toolbar >
                 <Typography variant='h3'>Car Rental</Typography>
             
-                    <Typography variant='h6'>
-                        {userinfo.profile} | {userinfo.name} | Balance: {userinfo.wallet}
-                    </Typography>
+                {
+                    (token) && <Typography variant='h6'>
+                    {userinfo.profile} | {userinfo.name} | Balance: {userinfo.wallet}
+                </Typography>
+                    }
                 
                 {(!isLoggedIn) &&
                     <Box sx={{ marginLeft: "auto" }}>
